@@ -12,7 +12,7 @@ class JsonParserTestHamcrest {
 
     @Test
     void readString() throws IOException {
-        String filePath = "C:\\Users\\Densone\\IdeaProjects\\JsonCsvXml\\data2.json";
+        String filePath = "C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data2.json";
 
         String checkJsonParser = JsonParser.readString(filePath);
         assertThat(checkJsonParser, containsString("id"));
