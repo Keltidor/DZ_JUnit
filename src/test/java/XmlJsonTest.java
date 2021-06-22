@@ -25,7 +25,8 @@ class XmlJsonTest {
         List<Employee> listForCheck = new ArrayList<>();
         listForCheck.add(john);
         listForCheck.add(ivan);
-        String checkJson = "[{\"id\":1,\"firstName\":\"John\",\"lastName\":\"Smith\",\"country\":\"USA\",\"age\":25},{\"id\":2,\"firstName\":\"Ivan\",\"lastName\":\"Petrov\",\"country\":\"RU\",\"age\":23}]";
+        String checkJson = "[{\"id\":1,\"firstName\":\"John\",\"lastName\":\"Smith\",\"country\":\"USA\",\"age\":25}," +
+                "{\"id\":2,\"firstName\":\"Ivan\",\"lastName\":\"Petrov\",\"country\":\"RU\",\"age\":23}]";
 
         String json = CsvJson.listToJson(listForCheck);
 
