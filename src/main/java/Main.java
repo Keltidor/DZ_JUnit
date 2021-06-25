@@ -8,11 +8,11 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, ParseException {
 
-        File dataCsv = new File("C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data.csv");
-        File jsonCsv = new File("C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data1.json");
-        File dataXml = new File("C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data.xml");
-        File jsonXml = new File("C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data2.json");
-        File jsonParser = new File("C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data2.json");
+        File dataCsv = new File("data.csv");
+        File jsonCsv = new File("data1.json");
+        File dataXml = new File("data.xml");
+        File jsonXml = new File("data2.json");
+        File jsonParser = new File("data2.json");
 
         CsvJson.csvJson(dataCsv.getAbsolutePath(), jsonCsv.getAbsolutePath());
         XmlJson.xmlJson(dataXml.getAbsolutePath(), jsonXml.getAbsolutePath());

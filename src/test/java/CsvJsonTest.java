@@ -10,7 +10,7 @@ class CsvJsonTest {
     @Test
     void parseCSV_valid_test() throws IOException {
         final String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
-        final String fileName = "C:\\Users\\Densone\\IdeaProjects\\DZ_JUnit\\data.csv";
+        final String fileName = "\\data.csv";
 
         List<Employee> list = CsvJson.parseCSV(columnMapping, fileName);
 
