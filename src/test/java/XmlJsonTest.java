@@ -11,7 +11,7 @@ class XmlJsonTest {
 
     @Test
     void parseXML_valid_test() throws IOException, ParserConfigurationException, SAXException {
-        final String filename = "\\data.xml";
+        final String filename = "data.xml";
 
         List<Employee> list = XmlJson.parseXML(filename);
 
